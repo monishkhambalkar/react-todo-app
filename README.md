@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Initialize a Node.js project
+npm init -y
+
+# Install core backend packages
+npm install express mongoose cors socket.io
+
+# (optional) install nodemon for auto-restart during development
+npm install --save-dev nodemon
+
+
+#backedn/package.json
+"scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+}
+
+# start node server 
+npm run dev
